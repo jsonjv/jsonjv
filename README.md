@@ -31,7 +31,7 @@ const jason: Profile = {
     serverless: ['Amazon S3', 'AWS Lambda'],
     misc: ['Docker', 'Vim'],
   },
-  architecture: ['MVC', 'Single-Page Application'],
+  architecture: ['MVC', 'REST', 'Single-Page Application'],
   funFact: 'There are two ways to write error-free programs; only the third one works',
 };
 ```
