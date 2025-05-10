@@ -1,37 +1,41 @@
 ```typescript
 interface Profile {
-  pronouns: string;
+  pronouns: string[];
   code: string[];
   technologies: {
     frontend: { [key: string]: string[] };
     backend: { [key: string]: string[] };
     databases: string[];
-    serverless: string[];
+    apis: string[];
+    cloud: { [key: string]: string[] };
     misc: string[];
   };
-  architecture: string[];
+  architectures: string[];
   funFact: string;
 }
 
 const jason: Profile = {
-  pronouns: 'He' || 'Him',
-  code: ['JavaScript', 'Go', 'PHP', 'Python'],
+  pronouns: ['He', 'Him'],
+  code: ['JavaScript', 'Go', 'PHP'],
   technologies: {
     frontend: {
-      js: ['TypeScript', 'React', 'Redux', 'Redux-Saga'],
-      css: ['Tailwind CSS', 'Bootstrap'],
+      js: ['TypeScript', 'React', 'Redux'],
+      css: ['Tailwind CSS', 'shadcn/ui'],
+      testing: ['Jest', 'Cypress'],
     },
     backend: {
       js: ['Node', 'Express'],
       go: ['Revel'],
       php: ['Laravel'],
-      python: ['Flask'],
     },
     databases: ['MySQL', 'MongoDB', 'Amazon DynamoDB'],
-    serverless: ['Amazon S3', 'AWS Lambda'],
+    apis: ['REST'],
+    cloud: {
+      aws: ['Amazon S3', 'AWS Lambda'],
+    },
     misc: ['Docker', 'Vim'],
   },
-  architecture: ['MVC', 'REST', 'Single-Page Application'],
-  funFact: 'There are two ways to write error-free programs; only the third one works',
+  architectures: ['Microservices', 'Monolithic'],
+  funFact: 'There are two ways to write error-free programs; only the third one works. — Alan J. Perlis',
 };
 ```
